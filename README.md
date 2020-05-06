@@ -1,4 +1,4 @@
-# Integration-app-template
+# Integration Actions Template
 
 This is a repository template that comes with pre-configured GitHub Actions that
 * [Sends Webhooks to Jenkins](.github/workflows/jenkins_trigger.yml)
