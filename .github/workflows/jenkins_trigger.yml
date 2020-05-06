@@ -1,0 +1,15 @@
+name: Trigger Jenkins Job
+on: [pull_request]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger Job
+      uses: appleboy/jenkins-action@master
+      with:
+        url: "jenkins host" 
+        user: "example"
+        token: ${{ secrets.TOKEN }}
+        job: "foobar"
